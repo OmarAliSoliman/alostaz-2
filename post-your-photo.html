@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap-ar.min.css">
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link href="https://prayertimes.date/css/widget.api.v1.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- top-header -->
+  <div class="top-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="logo">
+            <img src="./assets/images/logo.png" alt="">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <a href="" class="spaces">
+            <img src="./assets/images/7101668883051653025.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="date-time">
+            <span id="date">
+              <i class="far fa-calendar-alt"></i>
+            </span>
+            <span class="datetime playsound">
+              <i class="far fa-clock"></i>
+              <span id="timenowinthecity">11:02:34 PM</span><br>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <div class="sign-in-sign-up">
+            <a class="sign-in" type="button" data-toggle="modal" data-target="#signin">
+              <i class="fas fa-user"></i>
+              <span href="">تسجيل الدخول</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">محليات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">عرب وعالم</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              محافظات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">الوادي الجديد</a>
+              <a class="dropdown-item" href="#">المنيا</a>
+              <a class="dropdown-item" href="#">المنوفية</a>
+              <a class="dropdown-item" href="#">مرسى مطروح</a>
+              <a class="dropdown-item" href="#">كفر الشيخ</a>
+              <a class="dropdown-item" href="#">قنا</a>
+              <a class="dropdown-item" href="#">القليوبية</a>
+              <a class="dropdown-item" href="#">القاهرة</a>
+              <a class="dropdown-item" href="#">الفيوم</a>
+              <a class="dropdown-item" href="#">الغربية</a>
+              <a class="dropdown-item" href="#">شمال سينا</a>
+              <a class="dropdown-item" href="#">الشرقية</a>
+              <a class="dropdown-item" href="#">السويس</a>
+              <a class="dropdown-item" href="#">سوهاج</a>
+              <a class="dropdown-item" href="#">دمياط</a>
+              <a class="dropdown-item" href="#">الدقهليه</a>
+              <a class="dropdown-item" href="#">الجيزة</a>
+              <a class="dropdown-item" href="#">جنوب سينا</a>
+              <a class="dropdown-item" href="#">بورسعيد</a>
+              <a class="dropdown-item" href="#">بني سويف</a>
+              <a class="dropdown-item" href="#">البحيرة</a>
+              <a class="dropdown-item" href="#">البحر الاحمر</a>
+              <a class="dropdown-item" href="#">الاقصر</a>
+              <a class="dropdown-item" href="#">اسيوط</a>
+              <a class="dropdown-item" href="#">اسوان</a>
+              <a class="dropdown-item" href="#">الاسماعلية</a>
+              <a class="dropdown-item" href="#">الاسكندرية</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">حوادث وتحقيقات</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              سياسة واقتصاد
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">اسعار واسواق</a>
+              <a class="dropdown-item" href="#">بورصة وشركات</a>
+              <a class="dropdown-item" href="#">بنوك واستثمار</a>
+              <a class="dropdown-item" href="#">نقل وملاحة</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">رياضة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ثقافة وفنون</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              منوعات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">سيدتى وطفلك </a>
+              <a class="dropdown-item" href="#">خدمات ومجتمع </a>
+              <a class="dropdown-item" href="#">كاريكاتير ورسوم </a>
+              <a class="dropdown-item" href="#">صحافة و تليفزيون </a>
+              <a class="dropdown-item" href="#">علوم وتكنولوجيا</a>
+              <a class="dropdown-item" href="#">صحة وجمال </a>
+              <a class="dropdown-item" href="#">صور وفيديوهات</a>
+              <a class="dropdown-item" href="#">عقارات وسيارات </a>
+              <a class="dropdown-item" href="#">تريندات وهاشتاجات عربية </a>
+              <a class="dropdown-item" href="#">دعاية وإعلانات </a>
+              <a class="dropdown-item" href="#">مواهب وهوايات</a>
+              <a class="dropdown-item" href="#">صوت وصورة</a>
+              <a class="dropdown-item" href="#">ناس ومجتمع</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">عقارات وسيارات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">مواهب وهوايات</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">صورت وصورة</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">ناس ومجتمع</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">دعاية واعلان</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              المزيد
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">تقارير وحوارات</a>
+              <a class="dropdown-item" href="#">ملفات ومتابعات</a>
+              <a class="dropdown-item" href="#">نواب واحزاب</a>
+              <a class="dropdown-item" href="#">نقابات وجمعيات</a>
+              <a class="dropdown-item" href="#">افراح واحزان</a>
+              <a class="dropdown-item" href="#">مدارس وجامعات</a>
+              <a class="dropdown-item" href="#">دنيا ودين</a>
+              <a class="dropdown-item" href="#">سياحة وطيران</a>
+              <a class="dropdown-item" href="#">فيروس كورونا</a>
+              <a class="dropdown-item" href="#">رسائل وشكاوى</a>
+              <a class="dropdown-item" href="#">خدمة تطبيقات الموبايل وRSS</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- social & search -->
+  <div class="social-search">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-google-plus"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <a href="" class="spaces">
+            <img src="./assets/images/7101668883051653025.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="ابحث هنا" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="newline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm col-md col-lg-2">
+          <div class="news-img-logo">
+            <img src="./assets/images/logo.png" alt="">
+          </div>
+        </div>
+        <div class="col-sm col-md col-lg-10">
+          <div class="my-news-slider" dir="ltr">
+            <div class="slider-item">
+              <a href="">
+                مصر وليبيا يتفقان على إعادة الطيران المباشر وتوقيع 3 اتفاقيات فى الكهرباء
+              </a>
+            </div>
+            <div class="slider-item">
+              <a href="">مفتى الجمهورية: إذا منع الاعتكاف فى المساجد سقطت سنة "الاعتكاف"</a>
+            </div>
+            <div class="slider-item">
+              <a href="">
+                مدبولى من طرابلس: سعيد بوجودى فى ليبيا.. وسنوقع مذكرات تفاهم وتعاون
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-2 col-lg-2">
+          <div class="spaces">
+            <a href="">
+              <img src="./assets/images/ramadan2021.webp" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-8">
+          <div class="post-your-photo">
+            <p>يسعد جريدة "الأستاذ" أن تدعو محترفي وهواة التصوير لإرسال أعمالهم المميزة من الصور الفوتوغرافية، وسيتم
+              اختيار أفضل الصور لنشرها في الصحيفة الورقية والموقع الإلكتروني ومنصات التواصل الاجتماعي التابعة للصحيفة،
+              مع مراعاة التالي:
+            </p>
+            <ul class="list-unstyled">
+              <li>ألا تكون الصورة قد نشرت في أي مطبوعة أخرى، لكن يمكن استقبال الصور التي اشتركت في معارض خاصة أو عامة،
+                ويحق للصحيفة إعادة نشر الصور.
+              </li>
+              <li>
+                رفاق المعلومات الضرورية مع الصورة؛ مثل مكان وتاريخ التصوير، ووصف موجز لمحتوى الصورة.
+              </li>
+            </ul>
+            <p>
+              <span>ملاحظة</span>: يعد إرسال المشاركة إقرارا من المصور بملكيته التامة للصور. ويلتزم المشترك بالحصول على موافقة
+              الأشخاص الظاهرين بالصور، أو ولي الأمر إذا ظهر في الصور أطفال.
+            </p>
+            <h6>
+              ترسل المشاركات عبر البريد الإلكتروني:
+              <a href="mailto:omar.ali.alasmar@gmail.com">omar.ali.alasmar@gmail.com</a>
+            </h6>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2">
+          <div class="spaces">
+            <a href="">
+              <img src="./assets/images/ramadan2021.webp" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="important-links an-links">
+            <h5>أقسام الموقع</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">الصفحة الرئيسية</a></li>
+              <li><a href="#">محليات</a></li>
+              <li><a href="#">عرب وعالم</a></li>
+              <li><a href="#">محافظات</a></li>
+              <li><a href="#">حوادث</a></li>
+              <li><a href="">اقتصاد</a></li>
+              <li><a href="">ثقافة وفنون</a></li>
+              <li><a href="">رياضة</a></li>
+              <li><a href="">منوعات</a></li>
+              <li><a href="">سيدتى وطفلك</a></li>
+              <li><a href="">مجتمع</a></li>
+              <li><a href="">كاريكاتير</a></li>
+              <li><a href="">صحافة وفنون</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="logo mt-3">
+            <img src="./assets/images/logo.png" alt="">
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+              أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="about-site">
+            <h5>حمل التطبيق</h5>
+            <a href="">
+              <img src="./assets/images/play.png" alt="">
+            </a>
+            <a href="">
+              <img src="./assets/images/apple.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="important-links an-links">
+            <h5>روابط</h5>
+            <ul class="list-unstyled">
+              <li><a href="">اتصل بنا</a></li>
+              <li><a href="#">اتصل بنا</a></li>
+              <li><a href="">كيف تصل الينا</a></li>
+              <li><a href="">اعلن معنا</a></li>
+              <li><a href="#">شروط الاستخدام</a></li>
+              <li><a href="#">سياية الخصوصية</a></li>
+              <li><a href="">ارسل خبرا</a></li>
+              <li><a href="">انشر صورك</a></li>
+              <li><a href="">تابع أخرالأخبار عبر الاشتراك بالجريدة الإلكترونية </a></li>
+              <li><a href="">اشترك في خدمة الواتساب</a></li>
+              <li><a href="">اشترك فى النشرة الإخبارية </a></li>
+              <li><a href="">امسح الكود وحمل التطبيق </a></li>
+              <li><a href="#">عن الموقع</a></li>
+              <li><a href="#">خدمة الرسائل</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-google-plus"></i></a>
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="copy">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="copy-content">
+              <h5>جميع الحقوق محفوظة لموقع جريدة الأستاذ &copy;</h5>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="copy-develop">
+              <h5>تصميم وتطوير قسم تقنية المعلومات </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+
+  <!-- sign in modal -->
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="username">اسم المستخدم</label>
+              <input type="text" name="" id="" class="form-control" placeholder="اسم المستخدم">
+            </div>
+            <div class="form-group">
+              <label for="username">كلمة المرور</label>
+              <input type="text" name="" id="" class="form-control" placeholder="كلمة المرور">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-block">الدخول</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="https://prayertimes.date/js/widget.api.v1.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
