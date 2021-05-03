@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&display=swap");
 $mainColor: #1711be;
 $secondColor: #fabb27;
 
@@ -93,8 +93,9 @@ img {
   .nav-item {
     .nav-link {
       color: #fff !important;
-      font-size: 15px;
+      font-size: 13px;
       position: relative;
+      font-weight: bold !important;
       &::before {
         content: "";
         position: absolute;
@@ -133,6 +134,24 @@ img {
         border-bottom: 0 !important;
       }
     }
+  }
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu a::after {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: rotate(90deg);
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
   }
 }
 
@@ -194,17 +213,17 @@ img {
   }
 }
 
-
-
 .newline {
-  background-image:  linear-gradient(to left, #008ed9, #8b00db);  padding: 10px 0 10px 0;
-  .row{
+  background-image: linear-gradient(to left, #008ed9, #8b00db);
+  padding: 10px 0 10px 0;
+  .row {
     margin: 0;
-    .col-lg-10, .col-lg-2{
+    .col-lg-10,
+    .col-lg-2 {
       padding: 0;
     }
   }
-  .my-news-slider{
+  .my-news-slider {
     text-align: right;
   }
   .slider-item {
@@ -213,15 +232,13 @@ img {
       color: #fff;
     }
   }
-  .news-img-logo{
-    img{
+  .news-img-logo {
+    img {
       max-height: 100px;
       width: 100px;
     }
   }
 }
-
-
 
 #prayer-container {
   width: 100%;
@@ -466,6 +483,12 @@ img {
   }
 }
 
+.urgently-slider{
+  .slider-item{
+    margin: 5px;
+  }
+}
+
 .new-card-of-main-section {
   padding: 10px;
   border: 0;
@@ -611,25 +634,25 @@ img {
       }
     }
 
-    .leave-comment{
-      .form-control{
+    .leave-comment {
+      .form-control {
         border: 0;
-        &::placeholder{
+        &::placeholder {
           font-size: 15px;
         }
       }
     }
-    
-    .all-comments{
+
+    .all-comments {
       margin-bottom: 30px;
-      .card{
+      .card {
         padding: 10px;
         background-color: transparent;
-        .card-title{
+        .card-title {
           font-size: 14px;
           margin: 0;
         }
-        .card-text{
+        .card-text {
           font-size: 17px;
           margin: 0;
           margin-top: 10px;
@@ -637,19 +660,19 @@ img {
       }
     }
 
-    .share{
+    .share {
       background-color: #a1a1a1;
       padding: 5px;
-      h6{
+      h6 {
         color: $mainColor;
       }
-      a{
+      a {
         color: #fff;
         font-size: 20px !important;
         margin-left: 10px;
         text-decoration: none;
-        transition: all .5s ease-in-out;
-        &:hover{
+        transition: all 0.5s ease-in-out;
+        &:hover {
           color: $mainColor;
         }
       }
@@ -767,18 +790,18 @@ img {
   }
 }
 
-.post-your-photo{
+.post-your-photo {
   margin-top: 20px;
-  p{
+  p {
     font-size: 18px;
     line-height: 30px;
   }
-  ul{
-    li{
+  ul {
+    li {
       margin-bottom: 10px;
       position: relative;
       padding-right: 20px;
-      &::before{
+      &::before {
         right: 0;
         content: "";
         position: absolute;
@@ -791,8 +814,8 @@ img {
       }
     }
   }
-  p{
-    span{
+  p {
+    span {
       color: #c31e1e;
     }
   }
@@ -800,9 +823,10 @@ img {
 
 // start footer
 footer {
-  background-image:  linear-gradient(to left, #008ed9, #8b00db);  padding: 10px 0 10px 0;
+  background-color: #000;
+  padding: 0 0 10px 0;
   // margin-top: 100px;
-  padding-top: 70px;
+  padding-top: 5px;
   // padding-bottom: 30px;
   .footer-top {
     margin-bottom: 20px;
@@ -885,6 +909,9 @@ footer {
       li {
         width: 50%;
         float: right;
+        a {
+          // font-weight: bold;
+        }
       }
     }
   }
@@ -896,6 +923,10 @@ footer {
       width: auto !important;
       margin-left: 10px;
       margin-bottom: 10px !important;
+      a {
+        font-size: 14px;
+        // font-weight: bold;
+      }
       &::before {
         content: "|";
         // margin-top: 3px;
@@ -906,7 +937,7 @@ footer {
   }
 
   .about-site {
-    h5 {
+    span {
       color: #fff;
       font-size: 18px;
       margin-bottom: 15px;
@@ -951,7 +982,7 @@ footer {
 }
 
 .section-header {
-  background-color: $mainColor;
+  background-color: #c31e1e;
   color: #fff;
   padding: 10px;
   position: relative;
@@ -968,8 +999,9 @@ footer {
   &::before {
     content: "";
     position: absolute;
-    width: .5%;
-    background-image:  linear-gradient(to right, #008ed9, #8b00db);  padding: 10px 0 10px 0;
+    width: 0.5%;
+    background-color: $mainColor;
+    padding: 10px 0 10px 0;
     height: 100%;
     top: 0;
     right: 0;
@@ -980,6 +1012,35 @@ footer {
     &::before {
       width: 100%;
     }
+  }
+}
+
+.marqueed {
+  direction: ltr;
+  // margin: 0 auto;
+  width: 100%;
+  background-color: #c31e1e;
+}
+.marqueed a {
+  direction: rtl;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 10px 52px 10px 0px;
+  // font: bold 1em/2em "SkyNews";
+  color: #fff;
+  text-align: right;
+  background: transparent url("../images/logo.png") no-repeat center right;
+  background-size: 48px 32px;
+}
+.marqueed a:hover {
+  color: #000000;
+}
+
+.cards-advert {
+  .card-adv {
+    height: 200px;
+    border: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -1003,21 +1064,21 @@ footer {
   }
 }
 
-@media(max-width: 800px){
-  .navbar-light .navbar-toggler{
+@media (max-width: 800px) {
+  .navbar-light .navbar-toggler {
     background-color: #fff;
   }
-  .navbar{
+  .navbar {
     display: block;
   }
-  .navbar-nav{
+  .navbar-nav {
     text-align: center;
     margin: 0 !important;
-    .nav-item{
+    .nav-item {
       width: 100%;
     }
   }
-  .top-header .date-time{
+  .top-header .date-time {
     text-align: center;
   }
 }

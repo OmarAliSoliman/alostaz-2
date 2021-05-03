@@ -22,7 +22,8 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="logo">
-            <img src="./assets/images/logo.png" alt="">
+            <!-- <img src="./assets/images/logo.png" alt=""> -->
+            <h5 style="color: red;">الوسيط الدولي</h5>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
@@ -35,9 +36,10 @@
             <span id="date">
               <i class="far fa-calendar-alt"></i>
             </span>
-            <span class="datetime playsound">
+            <!-- <span class="datetime playsound">
               <i class="far fa-clock"></i>
-              <span id="timenowinthecity">11:02:34 PM</span><br>
+              <span>11:02:34 PM</span><br>
+            </span> -->
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-2">
@@ -68,108 +70,138 @@
           <li class="nav-item">
             <a class="nav-link" href="#">محليات</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">عرب وعالم</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              عرب وعالم
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">عرب</a></li>
+              <li><a class="dropdown-item" href="#">عالم</a></li>
+              <li><a class="dropdown-item" href="#">افريقا</a></li>
+              <li><a class="dropdown-item" href="#">الصين</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               محافظات
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">الوادي الجديد</a>
-              <a class="dropdown-item" href="#">المنيا</a>
-              <a class="dropdown-item" href="#">المنوفية</a>
-              <a class="dropdown-item" href="#">مرسى مطروح</a>
-              <a class="dropdown-item" href="#">كفر الشيخ</a>
-              <a class="dropdown-item" href="#">قنا</a>
-              <a class="dropdown-item" href="#">القليوبية</a>
-              <a class="dropdown-item" href="#">القاهرة</a>
-              <a class="dropdown-item" href="#">الفيوم</a>
-              <a class="dropdown-item" href="#">الغربية</a>
-              <a class="dropdown-item" href="#">شمال سينا</a>
-              <a class="dropdown-item" href="#">الشرقية</a>
-              <a class="dropdown-item" href="#">السويس</a>
-              <a class="dropdown-item" href="#">سوهاج</a>
-              <a class="dropdown-item" href="#">دمياط</a>
-              <a class="dropdown-item" href="#">الدقهليه</a>
-              <a class="dropdown-item" href="#">الجيزة</a>
-              <a class="dropdown-item" href="#">جنوب سينا</a>
-              <a class="dropdown-item" href="#">بورسعيد</a>
-              <a class="dropdown-item" href="#">بني سويف</a>
-              <a class="dropdown-item" href="#">البحيرة</a>
-              <a class="dropdown-item" href="#">البحر الاحمر</a>
-              <a class="dropdown-item" href="#">الاقصر</a>
-              <a class="dropdown-item" href="#">اسيوط</a>
-              <a class="dropdown-item" href="#">اسوان</a>
-              <a class="dropdown-item" href="#">الاسماعلية</a>
-              <a class="dropdown-item" href="#">الاسكندرية</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">الوادي الجديد</a></li>
+              <li><a class="dropdown-item" href="#">المنيا</a></li>
+              <li><a class="dropdown-item" href="#">المنوفية</a></li>
+              <li><a class="dropdown-item" href="#">مرسى مطروح</a></li>
+              <li><a class="dropdown-item" href="#">كفر الشيخ</a></li>
+              <li><a class="dropdown-item" href="#">قنا</a></li>
+              <li><a class="dropdown-item" href="#">القليوبية</a></li>
+              <li><a class="dropdown-item" href="#">القاهرة</a></li>
+              <li><a class="dropdown-item" href="#">الفيوم</a></li>
+              <li><a class="dropdown-item" href="#">الغربية</a></li>
+              <li><a class="dropdown-item" href="#">شمال سينا</a></li>
+              <li><a class="dropdown-item" href="#">الشرقية</a></li>
+              <li><a class="dropdown-item" href="#">السويس</a></li>
+              <li><a class="dropdown-item" href="#">سوهاج</a></li>
+              <li><a class="dropdown-item" href="#">دمياط</a></li>
+              <li><a class="dropdown-item" href="#">الدقهليه</a></li>
+              <li><a class="dropdown-item" href="#">الجيزة</a></li>
+              <li><a class="dropdown-item" href="#">جنوب سينا</a></li>
+              <li><a class="dropdown-item" href="#">بورسعيد</a></li>
+              <li><a class="dropdown-item" href="#">بني سويف</a></li>
+              <li><a class="dropdown-item" href="#">البحيرة</a></li>
+              <li><a class="dropdown-item" href="#">البحر الاحمر</a></li>
+              <li><a class="dropdown-item" href="#">الاقصر</a></li>
+              <li><a class="dropdown-item" href="#">اسيوط</a></li>
+              <li><a class="dropdown-item" href="#">اسوان</a></li>
+              <li><a class="dropdown-item" href="#">الاسماعلية</a></li>
+              <li><a class="dropdown-item" href="#">الاسكندرية</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">حوادث وتحقيقات</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              حوادث وتحقيقات
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">حوادث </a></li>
+              <li><a class="dropdown-item" href="#">تحقيقات </a></li>
+              <li><a class="dropdown-item" href="#">ملفات ساخنة </a></li>
+              <li><a class="dropdown-item" href="#">جرائم </a></li>
+              <li><a class="dropdown-item" href="#">محاكم </a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               سياسة واقتصاد
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">اسعار واسواق</a>
-              <a class="dropdown-item" href="#">بورصة وشركات</a>
-              <a class="dropdown-item" href="#">بنوك واستثمار</a>
-              <a class="dropdown-item" href="#">نقل وملاحة</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">اسعار واسواق</a></li>
+              <li><a class="dropdown-item" href="#">بورصة وشركات</a></li>
+              <li><a class="dropdown-item" href="#">بنوك واستثمار</a></li>
+              <li><a class="dropdown-item" href="#">نقل وملاحة</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               رياضة
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">رياضة محلية</a>
-              <a class="dropdown-item" href="#">رياضة عربية</a>
-              <a class="dropdown-item" href="#">رياضة عالمية</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">رياضة محلية</a></li>
+              <li><a class="dropdown-item" href="#">رياضة عربية</a></li>
+              <li><a class="dropdown-item" href="#">رياضة عالمية</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               ثقافة وفنون
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">بورتريه </a>
-              <a class="dropdown-item" href="#">تراث</a>
-              <a class="dropdown-item" href="#">اعلام</a>
-              <a class="dropdown-item" href="#">اصدارات</a>
-              <a class="dropdown-item" href="#">كاركاتير</a>
-              <a class="dropdown-item" href="#">كتب</a>
-              <a class="dropdown-item" href="#">ثقافات</a>
-              <a class="dropdown-item" href="#">نصوص</a>
-              <a class="dropdown-item" href="#">فنون</a>
-              <a class="dropdown-item" href="#">اراء ومقالات</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">بورتريه </a></li>
+              <li><a class="dropdown-item" href="#">تراث</a></li>
+              <li><a class="dropdown-item" href="#">اعلام</a></li>
+              <li><a class="dropdown-item" href="#">اصدارات</a></li>
+              <li><a class="dropdown-item" href="#">كاركاتير</a></li>
+              <li><a class="dropdown-item" href="#">كتب</a></li>
+              <li><a class="dropdown-item" href="#">ثقافات</a></li>
+              <li><a class="dropdown-item" href="#">نصوص</a></li>
+              <li><a class="dropdown-item" href="#">فنون</a></li>
+              <li><a class="dropdown-item" href="#">اراء ومقالات</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               منوعات
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">سيدتى وطفلك </a>
-              <a class="dropdown-item" href="#">خدمات ومجتمع </a>
-              <a class="dropdown-item" href="#">كاريكاتير ورسوم </a>
-              <a class="dropdown-item" href="#">صحافة و تليفزيون </a>
-              <a class="dropdown-item" href="#">علوم وتكنولوجيا</a>
-              <a class="dropdown-item" href="#">صحة وجمال </a>
-              <a class="dropdown-item" href="#">صور وفيديوهات</a>
-              <a class="dropdown-item" href="#">عقارات وسيارات </a>
-              <a class="dropdown-item" href="#">تريندات وهاشتاجات عربية </a>
-              <a class="dropdown-item" href="#">دعاية وإعلانات </a>
-              <a class="dropdown-item" href="#">مواهب وهوايات</a>
-              <a class="dropdown-item" href="#">صوت وصورة</a>
-              <a class="dropdown-item" href="#">ناس ومجتمع</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">سيدتى وطفلك </a></li>
+              <li><a class="dropdown-item" href="#">خدمات ومجتمع </a></li>
+              <li><a class="dropdown-item" href="#">كاريكاتير ورسوم </a></li>
+              <li><a class="dropdown-item" href="#">صحافة و تليفزيون </a></li>
+              <li><a class="dropdown-item" href="#">علوم وتكنولوجيا</a></li>
+              <li><a class="dropdown-item" href="#">صحة وجمال </a></li>
+              <li><a class="dropdown-item" href="#">صور وفيديوهات</a></li>
+              <li><a class="dropdown-item" href="#">عقارات وسيارات </a></li>
+              <li><a class="dropdown-item" href="#">تريندات وهاشتاجات عربية </a></li>
+              <li><a class="dropdown-item" href="#">دعاية وإعلانات </a></li>
+              <li><a class="dropdown-item" href="#">مواهب وهوايات</a></li>
+              <li><a class="dropdown-item" href="#">صوت وصورة</a></li>
+              <li><a class="dropdown-item" href="#">ناس ومجتمع</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">دعاية واعلان</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">أسواق ومعارض</a></li>
+                  <li><a class="dropdown-item" href="#">عروض وخصومات </a></li>
+                  <li><a class="dropdown-item" href="#">شركات ومصانع</a></li>
+                  <li><a class="dropdown-item" href="#">تدريب وتسويق </a></li>
+                  <li><a class="dropdown-item" href="#">تأمين واستثمار </a></li>
+                  <li><a class="dropdown-item" href="#">محلات تجارية وافتتاحات</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -181,34 +213,40 @@
               <a class="dropdown-item" href="#">سيارات</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">مواهب وهوايات</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">صورت وصورة</a>
-          </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              عقارات وسيارات
+              مواهب وهوايات
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">انفوجراف</a>
-              <a class="dropdown-item" href="#">حياة كريمة</a>
-              <a class="dropdown-item" href="#">خدمات وأدلة</a>
-              <a class="dropdown-item" href="#">حياة الناس</a>
-              <a class="dropdown-item" href="#">أهل الخير</a>
-              <a class="dropdown-item" href="#">وفيات</a>
-              <a class="dropdown-item" href="#">مفقودات</a>
-              <a class="dropdown-item" href="#">تهانى ومناسبات</a>
-              <a class="dropdown-item" href="#">الصلح خير</a>
-              <a class="dropdown-item" href="#">خطابك وصل</a>
-              <a class="dropdown-item" href="#">تسالى وابتسامات</a>
-              <a class="dropdown-item" href="#">مخترعات وابتكارات </a>
-              <a class="dropdown-item" href="#">استغاثات ومتابعات </a>
-              <a class="dropdown-item" href="#">جمعيات ونقابات </a>
-              <a class="dropdown-item" href="#">حدوتة مصرية </a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">مواهب </a></li>
+              <li><a class="dropdown-item" href="#">هوايات </a></li>
+              <li><a class="dropdown-item" href="#">غرائب وطرائف</a></li>
+              <li><a class="dropdown-item" href="#">مسابقات وتسالى</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              ناس ومجتمع
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">انفوجراف</a></li>
+              <li><a class="dropdown-item" href="#">حياة كريمة</a></li>
+              <li><a class="dropdown-item" href="#">خدمات وأدلة</a></li>
+              <li><a class="dropdown-item" href="#">حياة الناس</a></li>
+              <li><a class="dropdown-item" href="#">أهل الخير</a></li>
+              <li><a class="dropdown-item" href="#">وفيات</a></li>
+              <li><a class="dropdown-item" href="#">مفقودات</a></li>
+              <li><a class="dropdown-item" href="#">تهانى ومناسبات</a></li>
+              <li><a class="dropdown-item" href="#">الصلح خير</a></li>
+              <li><a class="dropdown-item" href="#">خطابك وصل</a></li>
+              <li><a class="dropdown-item" href="#">تسالى وابتسامات</a></li>
+              <li><a class="dropdown-item" href="#">مخترعات وابتكارات </a></li>
+              <li><a class="dropdown-item" href="#">استغاثات ومتابعات </a></li>
+              <li><a class="dropdown-item" href="#">جمعيات ونقابات </a></li>
+              <li><a class="dropdown-item" href="#">حدوتة مصرية </a></li>
+            </ul>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">دعاية واعلان</a>
@@ -218,13 +256,22 @@
               aria-haspopup="true" aria-expanded="false">
               المزيد
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">عاجل</a>
-              <a class="dropdown-item" href="#">دنيا ودين</a>
-              <a class="dropdown-item" href="#">سياحة وطيران</a>
-              <a class="dropdown-item" href="#">فيروس كورونا</a>
-              <a class="dropdown-item" href="#">قنصليات وسفارات</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">عاجل</a></li>
+              <li><a class="dropdown-item" href="#">دنيا ودين</a></li>
+              <li><a class="dropdown-item" href="#">سياحة وطيران</a></li>
+              <li><a class="dropdown-item" href="#">فيروس كورونا</a></li>
+              <li><a class="dropdown-item" href="#">قنصليات وسفارات</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">صوت وصورة</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">فيديوهات </a></li>
+                  <li><a class="dropdown-item" href="#">ألبومات صور </a></li>
+                  <li><a class="dropdown-item" href="#">راديو الأستاذ</a></li>
+                  <li><a class="dropdown-item" href="#">تليفزيون الأستاذ</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -265,32 +312,39 @@
     </div>
   </div>
 
-  <div class="newline">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm col-md col-lg-2">
-          <div class="news-img-logo">
-            <img src="./assets/images/logo.png" alt="">
-          </div>
-        </div>
-        <div class="col-sm col-md col-lg-10">
-          <div class="my-news-slider" dir="ltr">
-            <div class="slider-item">
-              <a href="">
-                مصر وليبيا يتفقان على إعادة الطيران المباشر وتوقيع 3 اتفاقيات فى الكهرباء
-              </a>
-            </div>
-            <div class="slider-item">
-              <a href="">مفتى الجمهورية: إذا منع الاعتكاف فى المساجد سقطت سنة "الاعتكاف"</a>
-            </div>
-            <div class="slider-item">
-              <a href="">
-                مدبولى من طرابلس: سعيد بوجودى فى ليبيا.. وسنوقع مذكرات تفاهم وتعاون
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div id='HLvD'>
+    <div id='Marqs' class="marqueed WAITcss">
+      <a href='https://www.alnaharegypt.com/699205' title='حالة الطقس ودرجات الحرارة غدا الثلاثاء'>حالة الطقس ودرجات
+        الحرارة غدا الثلاثاء</a><a href='https://www.alnaharegypt.com/699204'
+        title='الزمالك عن عقوبة إمام عاشور: اعتبروه محمد الشناوي'>الزمالك عن
+        عقوبة إمام عاشور: اعتبروه محمد الشناوي</a><a href='https://www.alnaharegypt.com/699203'
+        title='بيطري الشرقية: يضبط طن و 417 كجم أسماك وجمبري و 93 كجم لحوم غير صالحة للاستخدام الآدمي'>بيطري الشرقية:
+        يضبط
+        طن و 417 كجم أسماك وجمبري و 93 كجم لحوم غير صالحة للاستخدام الآدمي</a>
+      <a href='https://www.alnaharegypt.com/699202'
+        title='الخطيب يشكر أبناء الأهلي ويوجه التحية للشيخ طه وكنفاني ومصطفى فهمي'>الخطيب يشكر أبناء الأهلي ويوجه التحية
+        للشيخ طه وكنفاني ومصطفى فهمي</a><a href='https://www.alnaharegypt.com/699200'
+        title='اتحاد الكرة: تقرير جهاد جريشة لا يدين لاعبى الزمالك'>اتحاد الكرة: تقرير جهاد جريشة لا يدين لاعبى
+        الزمالك</a>
+      <a href='https://www.alnaharegypt.com/699198'
+        title='حريق هائل داخل مخبز إثر انفجار أسطوانات بوتاجاز بدار السلام'>حريق هائل داخل مخبز إثر انفجار أسطوانات
+        بوتاجاز بدار السلام</a><a href='https://www.alnaharegypt.com/699197'
+        title='مصرع شاب قفز من أعلي كوبري نفيشة في ترعة الإسماعيلية'>مصرع شاب قفز من أعلي كوبري نفيشة في ترعة
+        الإسماعيلية</a>
+      <a href='https://www.alnaharegypt.com/699195' title='إصابة سيدة وطفليها فى حريق شقة سكنية بالإسكندرية'>إصابة سيدة
+        وطفليها فى حريق شقة سكنية بالإسكندرية</a>
+      <a href='https://www.alnaharegypt.com/699194' title='هند صبري تبعث برسالة إيمانية لمتابعيها'>هند صبري تبعث برسالة
+        إيمانية لمتابعيها</a><a href='https://www.alnaharegypt.com/699192'
+        title='اندلاع حريق فى أرض شركة النحاس بالإسكندرية.. صور'>اندلاع حريق فى أرض شركة النحاس بالإسكندرية.. صور</a>
+      <a href='https://www.alnaharegypt.com/699190'
+        title='خلال حملات تفتيشية مكبرة بالمنوفية : إعدام 200كجم لحوم غير صالحة للاستهلاك الآدمي بسرس الليان والباجور وتنفيذ 83  حالات إزالة فورية'>خلال
+        حملات تفتيشية مكبرة بالمنوفية : إعدام 200كجم لحوم غير صالحة للاستهلاك الآدمي بسرس الليان والباجور وتنفيذ 83
+        حالات
+        إزالة فورية</a>
+      <a href='https://www.alnaharegypt.com/699189'
+        title='الإصلاح والتأهيل: إطلاع عدد من السفراء المعتمدين لدى البحرين على الإجراءات الاحترازية وخدمات  الرعاية الصحية المتكاملة‎'>الإصلاح
+        والتأهيل: إطلاع عدد من السفراء المعتمدين لدى البحرين على الإجراءات الاحترازية وخدمات الرعاية الصحية
+        المتكاملة‎</a>
     </div>
   </div>
 
@@ -298,8 +352,18 @@
   <div class="main">
     <div class="container-fluid">
       <div class="manager">
-        <h6>رئيس مجلس الادارة</h6>
-        <h5>الاستاذ عصام</h5>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <a href="" class="spaces">
+              <img src="./assets/images/7101668883051653025.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <a href="" class="spaces">
+              <img src="./assets/images/7101668883051653025.png" alt="">
+            </a>
+          </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2">
@@ -363,6 +427,67 @@
                 <img src="./assets/images/7101668883051653025.png" alt="">
               </a>
             </div>
+            <div class="urgently mt-3">
+              <h5 class="section-header">
+                اخبار عاجلة
+              </h5>
+              <div class="urgently-slider" dir="ltr">
+                <div class="slider-item">
+                  <a href="" class="card new-card-of-main-section">
+                    <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                      الأمن للمواطن ثم إجراء الانتخابات
+                    </p>
+                  </a>
+                </div>
+                <div class="slider-item">
+                  <a href="" class="card new-card-of-main-section">
+                    <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                      الأمن للمواطن ثم إجراء الانتخابات
+                    </p>
+                  </a>
+                </div>
+                <div class="slider-item">
+                  <a href="" class="card new-card-of-main-section">
+                    <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                      الأمن للمواطن ثم إجراء الانتخابات
+                    </p>
+                  </a>
+                </div>
+                <div class="slider-item">
+                  <a href="" class="card new-card-of-main-section">
+                    <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                      الأمن للمواطن ثم إجراء الانتخابات
+                    </p>
+                  </a>
+                </div>
+                <div class="slider-item">
+                  <a href="" class="card new-card-of-main-section">
+                    <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                      الأمن للمواطن ثم إجراء الانتخابات
+                    </p>
+                  </a>
+                </div>
+                <div class="slider-item">
+                  <a href="" class="card new-card-of-main-section">
+                    <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                    <h5 class="card-title">عنوان الخبر</h5>
+                    <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                      الأمن للمواطن ثم إجراء الانتخابات
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-8">
                 <div class="main-section-all">
@@ -398,14 +523,7 @@
                           </p>
                         </a>
                       </div>
-                    </div>
-                  </div>
-                  <div class="main-section-news arab-and-world">
-                    <h5 class="section-header">عرب وعالم
-                      <a href="" class="more">المزيد</a>
-                    </h5>
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-12">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -414,7 +532,7 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -423,7 +541,68 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-section-news arab-and-world">
+                    <h5 class="section-header">عرب وعالم
+                      <a href="" class="more">المزيد</a>
+                    </h5>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -439,7 +618,7 @@
                       <a href="" class="more">المزيد</a>
                     </h5>
                     <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -448,9 +627,45 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -464,7 +679,7 @@
                       <a href="" class="more">المزيد</a>
                     </h5>
                     <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -473,27 +688,45 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
-                          <h5 class="card-title">عنوان الخبر</h5>
-                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
-                            الأمن للمواطن ثم إجراء الانتخابات
-                          </p>
-                        </a>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
-                        <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
-                          <h5 class="card-title">عنوان الخبر</h5>
-                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
-                            الأمن للمواطن ثم إجراء الانتخابات
-                          </p>
-                        </a>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -518,7 +751,16 @@
                       </div>
                       <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -534,6 +776,24 @@
                           </p>
                         </a>
                       </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div class="main-section-news sports">
@@ -541,7 +801,7 @@
                       <a href="" class="more">المزيد</a>
                     </h5>
                     <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -550,9 +810,45 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -566,7 +862,7 @@
                       <a href="" class="more">المزيد</a>
                     </h5>
                     <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -575,9 +871,45 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -602,7 +934,16 @@
                       </div>
                       <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -618,6 +959,24 @@
                           </p>
                         </a>
                       </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div class="main-section-news car-building">
@@ -625,7 +984,7 @@
                       <a href="" class="more">المزيد</a>
                     </h5>
                     <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -634,9 +993,45 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -661,7 +1056,16 @@
                       </div>
                       <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -677,6 +1081,24 @@
                           </p>
                         </a>
                       </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div class="main-section-news soud-pic">
@@ -684,7 +1106,7 @@
                       <a href="" class="more">المزيد</a>
                     </h5>
                     <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-12">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -693,7 +1115,25 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -702,9 +1142,18 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -718,7 +1167,7 @@
                       <a href="" class="more">المزيد</a>
                     </h5>
                     <div class="row">
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -727,7 +1176,25 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="" class="card new-card-of-main-section">
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
+                          <h5 class="card-title">عنوان الخبر</h5>
+                          <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
+                            الأمن للمواطن ثم إجراء الانتخابات
+                          </p>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
                           <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
@@ -736,18 +1203,18 @@
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <div class="card-img"><img src="./assets/images/galley-2.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
                           </p>
                         </a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
                         <a href="" class="card new-card-of-main-section">
-                          <div class="card-img"><img src="./assets/images/galley-1.jpg" alt=""></div>
+                          <div class="card-img"><img src="./assets/images/galley-3.jpg" alt=""></div>
                           <h5 class="card-title">عنوان الخبر</h5>
                           <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من
                             الأمن للمواطن ثم إجراء الانتخابات
@@ -786,6 +1253,20 @@
                           <p class="card-text">برنامج الاستاذ ورمضان</p>
                         </div>
                       </div>
+                      <div class="card-books">
+                        <div class="card-img" style="background-image: url('./assets/images/books.jpg');"></div>
+                        <div class="card-body">
+                          <a href="" class="card-title">كتاب الاستاذ عصام</a>
+                          <p class="card-text">برنامج الاستاذ ورمضان</p>
+                        </div>
+                      </div>
+                      <div class="card-books">
+                        <div class="card-img" style="background-image: url('./assets/images/books.jpg');"></div>
+                        <div class="card-body">
+                          <a href="" class="card-title">كتاب الاستاذ عصام</a>
+                          <p class="card-text">برنامج الاستاذ ورمضان</p>
+                        </div>
+                      </div>
                     </div>
                     <div class="slider-item">
                       <div class="card-books">
@@ -802,15 +1283,6 @@
                           <p class="card-text">برنامج الاستاذ ورمضان</p>
                         </div>
                       </div>
-                      <div class="card-books">
-                        <div class="card-img" style="background-image: url('./assets/images/books.jpg');"></div>
-                        <div class="card-body">
-                          <a href="" class="card-title">كتاب الاستاذ عصام</a>
-                          <p class="card-text">برنامج الاستاذ ورمضان</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slider-item">
                       <div class="card-books">
                         <div class="card-img" style="background-image: url('./assets/images/books.jpg');"></div>
                         <div class="card-body">
@@ -849,7 +1321,7 @@
                   </div>
                 </div>
                 <div class="gallery">
-                  <div class="section-header">معرض الصور
+                  <div class="section-header"> رسوم وكاريكاتير
                     <a href="" class="more">المزيد</a>
                   </div>
                   <div class="row">
@@ -903,7 +1375,7 @@
                 </div>
                 <div class="gallery alostaz-tv mt-4">
                   <div class="section-header">صور الاستاذ
-                    <!-- <a href="" class="more">المزيد</a> -->
+                    <a href="" class="more">المزيد</a>
                   </div>
                   <div class="row">
                     <div class="col-6 col-md-6 col-lg-6">
@@ -925,6 +1397,74 @@
                       <a href="">
                         <img src="./assets/images/galley-1.jpg" alt="">
                       </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="most-read last-news mt-3">
+                  <h5 class="section-header">
+                    اخر الاخبار
+                    <a href="" class="more">المزيد</a>
+                  </h5>
+                  <div class="card-news-img-right">
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
+                    </div>
+                    <div class="card">
+                      <div class="card-img"><img src="./assets/images/slider-1.jpg" alt=""></div>
+                      <h5 class="card-title">عنوان الخبر</h5>
+                      <p class="card-text">«الدبيبة»: توحيد المؤسسات الليبية بنسبة 80%؜.. ونعمل على خلق حالة من الأمن
+                        للمواطن ثم إجراء الانتخابات</p>
                     </div>
                   </div>
                 </div>
@@ -1017,10 +1557,9 @@
                     src="https://www.meteoblue.com/ar/weather/widget/daily?geoloc=detect&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=monochrome&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"
                     frameborder="0" scrolling="NO" allowtransparency="true"
                     sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
-                    style="width: 100%; height: auto"></iframe>
+                    style="width: 216px; height: 219px"></iframe>
                   <div>
-                    <!-- DO NOT REMOVE THIS LINK --><a
-                      href="https://www.meteoblue.com/ar/weather/week/index?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget"
+                    <a href="https://www.meteoblue.com/ar/weather/week/index?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget"
                       target="_blank">meteoblue</a>
                   </div>
                 </div>
@@ -1088,7 +1627,7 @@
                   <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-12">
                       <div class="boll">
-                        <div class="section-header">استطلاع الرأي</div>
+                        <h5 class="section-header">استطلاع الرأي</h5>
                         <form action="">
                           <h5>هل تتوقع موجة ثانيه لفايروس كورونا</h5>
                           <div class="form-group">
@@ -1115,6 +1654,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="cards-advert mt-3">
+                  <h5 class="section-header">دعاية واعلان</h5>
+                  <div class="card card-adv"></div>
+                  <div class="card card-adv"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -1140,38 +1684,44 @@
 
   <!-- start footer -->
   <footer>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
           <div class="important-links an-links">
-            <h5>أقسام الموقع</h5>
+            <!-- <h5>أقسام الموقع</h5> -->
             <ul class="list-unstyled">
-              <li><a href="#">الصفحة الرئيسية</a></li>
+              <li><a href="#">الرئيسية</a></li>
               <li><a href="#">محليات</a></li>
               <li><a href="#">عرب وعالم</a></li>
               <li><a href="#">محافظات</a></li>
-              <li><a href="#">حوادث</a></li>
-              <li><a href="">اقتصاد</a></li>
-              <li><a href="">ثقافة وفنون</a></li>
+              <li><a href="#">حوادث وتحقسقات</a></li>
+              <li><a href="">سياسة واقتصاد</a></li>
               <li><a href="">رياضة</a></li>
+              <li><a href="">ثقافة وفنون</a></li>
               <li><a href="">منوعات</a></li>
-              <li><a href="">سيدتى وطفلك</a></li>
-              <li><a href="">مجتمع</a></li>
-              <li><a href="">كاريكاتير</a></li>
-              <li><a href="">صحافة وفنون</a></li>
+              <li><a href="">عقارات وسيارات</a></li>
+              <li><a href="">مواهب وهوايات</a></li>
+              <li><a href="">صوت وصورة</a></li>
+              <li><a href="">ناس ومجتمع</a></li>
+              <li><a href="">دعاية واعلان</a></li>
+              <!-- <li><a href="">المزيد</a></li> -->
             </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-3">
           <div class="logo mt-3">
             <img src="./assets/images/logo.png" alt="">
             <p>
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
-              أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              الأستاذ هى جريدة ورقية وإلكترونية ، تأسست عام 2010 ، متخصصة فى نشر الموضوعات التحريرية المتنوعة فى كافة
+              المجالات وكذلك الإعلانات والخدمات المجانية التى تخدم القارىء والمعلن وكل أفراد الأسرة العربية ، تصدر
+              أسبوعيا ، تقوم بتوزيعها داخل مصر " جريدة الجمهورية " وخارج مصر " الشركة القومية للتوزيع " تعمل وفق ميثاق
+              الشرف الصحفى ، بلا انتماءات سياسية أو حزبية أو انحيازات عقائدية أو مذهبية أو طائفية وهى بمثابة دليل
+              استرشادى فى كافة الموضوعات التى تخدم الفرد والمجتمع العربى ، كما تهدف إلى توفير خدمة فعالة متبادلة بين
+              عملائها وقرائها وتطمح إلى توسيع مساحة نشاطها لتصل إلى كافة الدول
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="about-site">
             <h5>حمل التطبيق</h5>
             <a href="">
@@ -1182,8 +1732,8 @@
             </a>
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class="important-links an-links">
+        <div class="col-sm-12 col-md-12 col-lg-5">
+          <div class="important-links">
             <h5>روابط</h5>
             <ul class="list-unstyled">
               <li><a href="">اتصل بنا</a></li>
@@ -1201,6 +1751,17 @@
               <li><a href="#">عن الموقع</a></li>
               <li><a href="#">خدمة الرسائل</a></li>
             </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="about-site text-right">
+            <span>حمل التطبيق</span>
+            <a href="">
+              <img src="./assets/images/play.png" alt="">
+            </a>
+            <a href="">
+              <img src="./assets/images/apple.png" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -1265,10 +1826,11 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
   <script src="https://prayertimes.date/js/widget.api.v1.min.js"></script>
+  <script src="./assets/js/simplemarquee.js"></script>
   <script src="./assets/js/main.js"></script>
   <script>
     function httpAjax(url, mFunction) { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function () { if (this.readyState == 4 && this.status == 200) { mFunction(JSON.parse(this.responseText)) } }; xhttp.open("GET", url, true); xhttp.send() } function changeCountry() { var c_value = document.getElementById("cid").value; httpAjax('//timesprayer.com/ajax.php?do=loadCities&language=ar&cid=' + c_value, function (result) { if (result.status == 1) { document.getElementById("ciid").innerHTML = result.msg } }) } function changecity() { var ci_value = document.getElementById("ciid").value; var thisurl = window.location.href; var newUrl = thisurl.replace("name=assiut", "name=" + ci_value); window.location.href = newUrl } var city_offset = "2"; var reminingtime = 17066000; var soundfile = "fajer"; var douration_sound = "280"; var clean_url = 'timesprayer.com';</script>
-  <script src="//timesprayer.com/js/ptimer.js"></script>
+  <script src="./assets/js/timerprayer.js"></script>
   <script>(function (i, s, o, g, r, a, m) { i.GoogleAnalyticsObject = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-51636779-1', 'timesprayer.com'); ga('send', 'pageview');</script>
 </body>
 

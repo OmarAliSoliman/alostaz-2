@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -85,8 +85,9 @@ img {
 }
 .navbar .nav-item .nav-link {
   color: #fff !important;
-  font-size: 15px;
+  font-size: 13px;
   position: relative;
+  font-weight: bold !important;
 }
 .navbar .nav-item .nav-link::before {
   content: "";
@@ -118,6 +119,22 @@ img {
 }
 .navbar .dropdown-menu .dropdown-item:last-child {
   border-bottom: 0 !important;
+}
+.navbar .dropdown-submenu {
+  position: relative;
+}
+.navbar .dropdown-submenu a::after {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translate(0, -50%);
+  transform: rotate(90deg);
+}
+.navbar .dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
 }
 
 .social-search {
@@ -183,7 +200,8 @@ img {
 .newline .row {
   margin: 0;
 }
-.newline .row .col-lg-10, .newline .row .col-lg-2 {
+.newline .row .col-lg-10,
+.newline .row .col-lg-2 {
   padding: 0;
 }
 .newline .my-news-slider {
@@ -409,6 +427,10 @@ img {
 .main .most-watch .card-news-img-right .card .card-text,
 .main .most-comment .card-news-img-right .card .card-text {
   font-size: 11px;
+}
+
+.urgently-slider .slider-item {
+  margin: 5px;
 }
 
 .new-card-of-main-section {
@@ -709,9 +731,9 @@ img {
 }
 
 footer {
-  background-image: linear-gradient(to left, #008ed9, #8b00db);
-  padding: 10px 0 10px 0;
-  padding-top: 70px;
+  background-color: #000;
+  padding: 0 0 10px 0;
+  padding-top: 5px;
 }
 footer .footer-top {
   margin-bottom: 20px;
@@ -785,10 +807,13 @@ footer .an-links li {
   margin-left: 10px;
   margin-bottom: 10px !important;
 }
+footer .an-links li a {
+  font-size: 14px;
+}
 footer .an-links li::before {
   content: "|";
 }
-footer .about-site h5 {
+footer .about-site span {
   color: #fff;
   font-size: 18px;
   margin-bottom: 15px;
@@ -831,7 +856,7 @@ footer .social a i {
 }
 
 .section-header {
-  background-color: #1711be;
+  background-color: #c31e1e;
   color: #fff;
   padding: 10px;
   position: relative;
@@ -850,7 +875,7 @@ footer .social a i {
   content: "";
   position: absolute;
   width: 0.5%;
-  background-image: linear-gradient(to right, #008ed9, #8b00db);
+  background-color: #1711be;
   padding: 10px 0 10px 0;
   height: 100%;
   top: 0;
@@ -860,6 +885,33 @@ footer .social a i {
 }
 .section-header:hover::before {
   width: 100%;
+}
+
+.marqueed {
+  direction: ltr;
+  width: 100%;
+  background-color: #c31e1e;
+}
+
+.marqueed a {
+  direction: rtl;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 10px 52px 10px 0px;
+  color: #fff;
+  text-align: right;
+  background: transparent url("../images/logo.png") no-repeat center right;
+  background-size: 48px 32px;
+}
+
+.marqueed a:hover {
+  color: #000000;
+}
+
+.cards-advert .card-adv {
+  height: 200px;
+  border: 0;
+  margin-bottom: 10px;
 }
 
 .modal.fade {
