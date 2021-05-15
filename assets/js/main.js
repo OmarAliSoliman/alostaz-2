@@ -4,36 +4,14 @@ $(document).ready(function () {
     today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   document.querySelector("#date").innerHTML += date;
 
-  if ($(".urgently-slider").length) {
-    $(".urgently-slider").slick({
-      slidesToShow: 5,
+  if($('.urgently-slider').length){
+    $('.urgently-slider').slick({
+      dots: false,
+      arrows: true,
       slidesToScroll: 1,
-      Infinit: true,
-      speed: 2000,
       autoplay: true,
-      autoplaySpeed: 0,
-      cssEase: 'linear',
-      // useTransform: true,
-      pauseOnHover: true,
-      // centerMode: true,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 524,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    });
+      cssEase: "linear",
+    })
   }
 
   if ($(".books-slider").length) {
